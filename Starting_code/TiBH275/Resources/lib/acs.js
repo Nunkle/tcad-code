@@ -40,10 +40,10 @@ exports.createUser = function(username, password, callback) {
  */
 };
 
-exports.brag = function(message, photo, callback) {
+exports.brag = function(message, callback) {
 /*
  * Write a function that will use the ACS Statuses API to post a message for the logged in user
- *   - pass a message and a photo, no other params are needed
+ *   - pass a message, no other params are needed
  *   - on success, call the callback function passing true
  *   - on failure, log the error to the console, call callback() passing false
 */

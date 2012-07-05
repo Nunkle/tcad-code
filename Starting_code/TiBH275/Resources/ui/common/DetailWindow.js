@@ -201,7 +201,7 @@ var DetailWindow = function(/*Object*/ _bounty, /*Tab object reference*/ contain
 				});
 			} else {
 				// otherwise, show the message window
-				var msgWin = require('ui/common/messageWindow').messageWindow(_bounty.title, imgView.toBlob());
+				var msgWin = require('ui/common/messageWindow').messageWindow(_bounty.title);
 				containingTab.open(msgWin);
 			}
 		});

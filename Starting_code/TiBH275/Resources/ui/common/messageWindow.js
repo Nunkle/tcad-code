@@ -65,7 +65,7 @@ exports.messageWindow = function(bountyname, photo) {
 		submitButton.title = L('pleasewait');
 		submitButton.enabled = false;
 		var acs = require('lib/acs');
-		acs.brag(message.value, photo, cb);
+		acs.brag(message.value, cb);
 	});
 	lwDialog.add(submitButton);
 	
