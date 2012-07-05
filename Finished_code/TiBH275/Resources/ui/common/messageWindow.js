@@ -2,7 +2,7 @@
 	UI component: Message composition & submission window
 */
 
-exports.messageWindow = function(bountyname, photo) {
+exports.messageWindow = function(bountyname) {
 	var lWin = Ti.UI.createWindow({
 		/* full-screen view provides modal veil	*/
 		backgroundColor: '#333',
@@ -65,7 +65,7 @@ exports.messageWindow = function(bountyname, photo) {
 		submitButton.title = L('pleasewait');
 		submitButton.enabled = false;
 		var acs = require('lib/acs');
-		acs.brag(message.value, photo, cb);
+		acs.brag(message.value, cb);
 	});
 	lwDialog.add(submitButton);
 	

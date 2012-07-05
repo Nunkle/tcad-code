@@ -36,6 +36,7 @@ var DetailWindow = function(/*Object*/ _bounty, /*Tab object reference*/ contain
 		width:200
 	});
 	photoButton.addEventListener('click', function() {
+		var db = require('lib/db');
 		if(Ti.Media.isCameraSupported) {
 			Ti.Media.showCamera({
 				success:function(event) {
@@ -201,7 +202,7 @@ var DetailWindow = function(/*Object*/ _bounty, /*Tab object reference*/ contain
 				});
 			} else {
 				// otherwise, show the message window
-				var msgWin = require('ui/common/messageWindow').messageWindow(_bounty.title, imgView.toBlob());
+				var msgWin = require('ui/common/messageWindow').messageWindow(_bounty.title);
 				containingTab.open(msgWin);
 			}
 		});

@@ -5,8 +5,8 @@
 var currentUser = null;
 var loggedIn = false;
 
-// add your ACS keys here:
 var Cloud = require('ti.cloud');
+//Cloud.debug = true;
 
 exports.isLoggedIn = function() {
 	return loggedIn;
@@ -60,11 +60,10 @@ exports.createUser = function(username, password, callback) {
 	});
 };
 
-exports.brag = function(message, photo, callback) {
+exports.brag = function(message, callback) {
 	if(loggedIn) {
 		Cloud.Statuses.create({
-		    message: message,
-		    photo: photo
+		    message: message
 		}, function (e) {
 		    if (e.success) {
 		        callback(true);
