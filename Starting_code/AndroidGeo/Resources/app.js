@@ -2,6 +2,9 @@ var win = Ti.UI.createWindow({
     backgroundColor: 'yellow'
 });
 
+if(Ti.Platform.model == 'google_sdk') {
+	alert('This app must be installed on a device to function properly.');
+}
 
 /*
 	Define our Android GPS provider types
