@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <property name="acs-oauth-secret-development" type="string">BID02R3o0uZLZU10OxVU1ZmYLBwRsjXr</property>
-    <property name="acs-oauth-key-development" type="string">BA2yMTGAnFK84ajykA6v82o6PY9AE8mv</property>
-    <property name="acs-api-key-development" type="string">M5o7zvTeh7k7ITLHbV2V6dOQWsIHvpWD</property>
-    <property name="acs-oauth-secret-production" type="string">C2VRFPVD6m9wHbqxAnk4HbhMg0bQmhoZ</property>
-    <property name="acs-oauth-key-production" type="string">NLvNj4JtCpGtaTZVK6bcXTkIpmbifRNP</property>
-    <property name="acs-api-key-production" type="string">ajWgFHnifWEgYzLb8oO7611VKkfROf53</property>
-    <sdk-version>2.0.0.GA</sdk-version>
+    <modules>
+        <module platform="commonjs" version="2.3.0">ti.cloud</module>
+    </modules>
+    <property name="acs-oauth-secret-production" type="string">bXPxmCNq0yuxgcAKSBEhZKaHWoazmKBv</property>
+    <property name="acs-oauth-key-production" type="string">wUN6l7jsq25pRhuEKepIdP8fAEX5gpA0</property>
+    <property name="acs-api-key-production" type="string">V7f7E3mFipzc66mpw5agfejUIL127VqK</property>
+    <property name="acs-oauth-secret-development" type="string">taiu6qluesnIgPYbUm9R3igTnoSM6zfE</property>
+    <property name="acs-oauth-key-development" type="string">aMxA9CLEUb25x2ZUWzcA3WLtO0bGJ2gN</property>
+    <property name="acs-api-key-development" type="string">ccSXFPDjYNOdPPOMXr1KroahiBUY1p8C</property>
+    <sdk-version>3.0.0.v20121002103353</sdk-version>
     <deployment-targets>
         <target device="mobileweb">false</target>
         <target device="iphone">true</target>
@@ -29,7 +32,7 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>30a33e8c-e12d-4864-b83a-d26df2eb195a</guid>
+    <guid>4B997F10-8069-48C0-8555-A2ABEE64852E</guid>
     <iphone>
         <orientations device="iphone">
             <orientation>Ti.UI.PORTRAIT</orientation>
