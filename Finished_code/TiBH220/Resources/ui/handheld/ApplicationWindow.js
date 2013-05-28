@@ -6,7 +6,7 @@ function ApplicationWindow(/*Boolean*/ _captured) {
 		backgroundImage: 'images/grain.png',
 		title: (_captured) ? L('captured') : L('fugitives'),
 		barColor: '#6d0a0c',
-		activity : {
+		activity: {
 			onCreateOptionsMenu : function(e) {
 				var menu = e.menu;
 				var m1 = menu.add({ title : L('add') });
