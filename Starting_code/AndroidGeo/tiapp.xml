@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <modules>
-        <module platform="commonjs" version="2.3.0">ti.cloud</module>
-    </modules>
-    <property name="acs-oauth-secret-production" type="string">bXPxmCNq0yuxgcAKSBEhZKaHWoazmKBv</property>
-    <property name="acs-oauth-key-production" type="string">wUN6l7jsq25pRhuEKepIdP8fAEX5gpA0</property>
-    <property name="acs-api-key-production" type="string">V7f7E3mFipzc66mpw5agfejUIL127VqK</property>
-    <property name="acs-oauth-secret-development" type="string">taiu6qluesnIgPYbUm9R3igTnoSM6zfE</property>
-    <property name="acs-oauth-key-development" type="string">aMxA9CLEUb25x2ZUWzcA3WLtO0bGJ2gN</property>
-    <property name="acs-api-key-development" type="string">ccSXFPDjYNOdPPOMXr1KroahiBUY1p8C</property>
-    <sdk-version>3.0.0.v20121002103353</sdk-version>
     <deployment-targets>
         <target device="mobileweb">false</target>
-        <target device="iphone">true</target>
+        <target device="iphone">false</target>
         <target device="ipad">false</target>
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <id>com.appcelerator.tibh275</id>
-    <name>TiBountyHunter</name>
+    <sdk-version>2.1.1.GA</sdk-version>
+    <id>com.appcelerator.androidgeo</id>
+    <name>AndroidGeo</name>
     <version>1.0</version>
     <publisher>tpoulsen</publisher>
-    <url>http://appcelerator.com</url>
+    <url>http://</url>
     <description>not specified</description>
-    <copyright>2011 by tpoulsen</copyright>
+    <copyright>2012 by tpoulsen</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
@@ -32,7 +23,8 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>4B997F10-8069-48C0-8555-A2ABEE64852E</guid>
+    <guid>969585b1-6c67-4732-947d-378037b7e6c1</guid>
+    <property name="ti.ui.defaultunit">dip</property>
     <iphone>
         <orientations device="iphone">
             <orientation>Ti.UI.PORTRAIT</orientation>
@@ -44,6 +36,17 @@
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
-    <property name="ti.android.threadstacksize" type="int">32768</property>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+		<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+		<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules/>
 </ti:app>

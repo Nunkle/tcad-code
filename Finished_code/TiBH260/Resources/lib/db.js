@@ -1,6 +1,6 @@
 //bootstrap database
 var db = Ti.Database.open('TiBountyHunter');
-db.execute('CREATE TABLE IF NOT EXISTS fugitives(id INTEGER PRIMARY KEY, name TEXT, captured INTEGER, url TEXT);');
+db.execute('CREATE TABLE IF NOT EXISTS fugitives(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, captured INTEGER, url TEXT);');
 db.close();
 
 exports.list = function(_captured) {
